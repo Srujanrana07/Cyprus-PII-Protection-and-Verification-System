@@ -7,8 +7,8 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" />
-  <img src="https://img.shields.io/github/last-commit/Srujanrana07/PII-Protect?style=flat-square&color=blue" />
-  <img src="https://img.shields.io/github/commit-activity/m/Srujanrana07/PII-Protect?style=flat-square&color=blueviolet" />
+  <img src="https://img.shields.io/github/last-commit/Srujanrana07//Cyprus-PII-Protection-and-Verification-System?style=flat-square&color=blue" />
+  <img src="https://img.shields.io/github/commit-activity/m/Srujanrana07//Cyprus-PII-Protection-and-Verification-System?style=flat-square&color=blueviolet" />
   <img src="https://img.shields.io/badge/Tests-Passing-success?style=flat-square" />
   <img src="https://img.shields.io/badge/Coverage-92%25-yellowgreen?style=flat-square" />
   <img src="https://img.shields.io/badge/Code%20Quality-A%2B-brightgreen?style=flat-square" />
