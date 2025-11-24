@@ -6,9 +6,15 @@
 <p align="center"><i>AI-Powered Sensitive Data Detection, Masking & Secure Document Management</i></p>
 
 <p align="center">
+  <!-- Technology Badges -->
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.8+-blue.svg" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" />
-  <img src="https://img.shields.io/github/last-commit/Srujanrana07//Cyprus-PII-Protection-and-Verification-System?style=flat-square&color=blue" />
-  <img src="https://img.shields.io/github/commit-activity/m/Srujanrana07//Cyprus-PII-Protection-and-Verification-System?style=flat-square&color=blueviolet" />
+  <img src="https://img.shields.io/github/last-commit/Srujanrana07/Cyprus-PII-Protection-and-Verification-System?style=flat-square&color=blue" />
+  <img src="https://img.shields.io/github/commit-activity/m/Srujanrana07/Cyprus-PII-Protection-and-Verification-System?style=flat-square&color=blueviolet" />
   <img src="https://img.shields.io/badge/Tests-Passing-success?style=flat-square" />
   <img src="https://img.shields.io/badge/Coverage-92%25-yellowgreen?style=flat-square" />
   <img src="https://img.shields.io/badge/Code%20Quality-A%2B-brightgreen?style=flat-square" />
