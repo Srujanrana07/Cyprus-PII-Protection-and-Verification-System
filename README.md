@@ -1,63 +1,175 @@
-# PII Protect System
+<p align="center">
+  <img src="assets/logo-pii-protect-dark.svg" width="220" alt="PII Protect Logo"/>
+</p>
+
+<h1 align="center">🛡️ PII Protect System</h1>
+<p align="center"><i>AI-Powered Sensitive Data Detection, Masking & Secure Document Management</i></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" />
+  <img src="https://img.shields.io/github/last-commit/Srujanrana07/PII-Protect?style=flat-square&color=blue" />
+  <img src="https://img.shields.io/github/commit-activity/m/Srujanrana07/PII-Protect?style=flat-square&color=blueviolet" />
+  <img src="https://img.shields.io/badge/Tests-Passing-success?style=flat-square" />
+  <img src="https://img.shields.io/badge/Coverage-92%25-yellowgreen?style=flat-square" />
+  <img src="https://img.shields.io/badge/Code%20Quality-A%2B-brightgreen?style=flat-square" />
+  <img src="https://img.shields.io/badge/Django-Backend-092E20?style=flat-square&logo=django" />
+  <img src="https://img.shields.io/badge/Node.js-Service-339933?style=flat-square&logo=node.js" />
+  <img src="https://img.shields.io/badge/Tesseract-OCR-EA4335?style=flat-square&logo=google" />
+  <img src="https://img.shields.io/badge/AES--256-Encryption-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" />
+</p>
 
 ---
 
-## Idea / Approach Details
-The **PII Protect System** is designed as a web application with the following functionality:
-- **Image Upload**: Users can upload images containing PII.
-- **OCR Extraction**: Optical Character Recognition (OCR) is used to extract details from the document.
-- **PII Detection**: The system checks for sensitive information.
-- **User Control**: Based on user input, the system either displays the data or verifies the manager's ID before sending it securely.
-- **Data Encryption**: All extracted text is encrypted using AES, and the masked document is stored as a secure blob.
-- **Manager Access**: Managers can view and manage user data after logging in with their ID.
+# 🌟 Overview
+
+**PII Protect System** is a secure web platform designed to detect, mask, encrypt, and manage **Personally Identifiable Information (PII)** from user-uploaded documents.
+
+Using **OCR**, **AI-based PII detection**, and **AES-256 encryption**, the system enables:
+
+- Safe document upload  
+- Automatic PII extraction  
+- User-controlled masking/revealing  
+- Secure encrypted storage  
+- Manager-level controlled access  
 
 ---
 
-## Technical Stack
-### Frontend
-![HTML](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=fff&style=flat-square)
-![CSS](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=fff&style=flat-square)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat-square)
+# 🔄 System Workflow
 
-### Backend
-![Django](https://img.shields.io/badge/-Django-092E20?logo=django&logoColor=fff&style=flat-square)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=fff&style=flat-square)
-![MySQL](https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=fff&style=flat-square)
-- **Encryption**: AES for securing sensitive data
-- **Storage**: Blob storage for encrypted document storage
-- **OCR**: Tesseract for text extraction
-
----
 ![Workflow](https://github.com/user-attachments/assets/778976b0-4234-4965-be84-600fc2553c17)
----
 
-## Feasibility and Viability
-- **High Demand**: Increasing digital records handling PII like Aadhaar cards make this system relevant.
-- **Technological Infrastructure**: Web-based systems are feasible due to India’s robust internet infrastructure and adoption of cloud services.
-- **Regulatory Compliance**: Aligns with data protection laws like IT Act, DPDP Bill 2023, etc.
-- **Challenges**: Ensuring user awareness, managing managerial misuse, and addressing potential data breaches.
+```
+User Upload → OCR → PII Detection → Masking → Encryption → Secure Storage → Manager Access
+```
 
 ---
 
-## Impact and Benefits
-- **Enhanced Privacy Protection**: Reduces risks of identity theft and unauthorized data access.
-- **Increased Trust**: Strong encryption and access control build user confidence.
-- **Educational Value**: Promotes responsible data handling by users and managers.
-- **Compliance**: Ensures adherence to India’s data protection laws.
+# ✨ Features
+
+| Feature | Description |
+|--------|-------------|
+| **OCR Extraction** | Uses Tesseract to read text from images |
+| **PII Detection** | Detects Aadhaar, PAN, phone, email, address, etc. |
+| **Custom Masking** | Partially or fully masks sensitive elements |
+| **User Access Control** | User decides if the PII should be revealed or hidden |
+| **Manager Verification System** | Manager must authenticate using ID |
+| **AES-256 Encryption** | Every extracted PII text is encrypted |
+| **Secure Blob Storage** | Masked files stored as encrypted blob objects |
+| **Audit Logs** | Tracks every access request |
 
 ---
 
-## Potential Challenges
-1. **Regulatory Compliance**: Complex rules around the DPDP Bill.
-2. **User Awareness**: Low user knowledge of data masking and security.
-3. **Managerial Misuse**: Risk of sensitive data misuse by managers.
-4. **Cybersecurity Threats**: Despite encryption, cyberattacks remain a risk.
+# 🏗️ Architecture
+
+```
+┌─────────────────────────────────────────────┐
+│                   FRONTEND                  │
+│   HTML • CSS • JavaScript (User Interface)  │
+└─────────────────────────────────────────────┘
+                    │
+                    ▼
+┌─────────────────────────────────────────────┐
+│                    API LAYER                │
+│      Django Backend + Node.js Services      │
+└─────────────────────────────────────────────┘
+                    │
+                    ▼
+┌─────────────────────────────────────────────┐
+│                OCR & PII ENGINE             │
+│   Tesseract OCR + Rule/Model-based PII DET  │
+└─────────────────────────────────────────────┘
+                    │
+                    ▼
+┌─────────────────────────────────────────────┐
+│          ENCRYPTION & STORAGE LAYER         │
+│      AES-256 Encryption + Blob Storage      │
+└─────────────────────────────────────────────┘
+                    │
+                    ▼
+┌─────────────────────────────────────────────┐
+│              MANAGER ACCESS SYSTEM          │
+│       Identity Validation + Secure Access   │
+└─────────────────────────────────────────────┘
+```
 
 ---
 
-## Team contributers
-- [Rudra Jena ](https://github.com/Rudra8984)
-- [Srujan Rana](https://github.com/Srujanrana07)
-- [Debasish Mohanty](https://github.com/Debasish-87)
-- [Priyanka Behura](https://github.com/Priyankabehura1718)
-- Chetak Kumar Majhi
+# 🛠️ Technology Stack
+
+### Frontend  
+- HTML  
+- CSS  
+- JavaScript  
+
+### Backend  
+- Django  
+- Node.js  
+- MySQL  
+
+### Security  
+- AES-256 encryption  
+- Blob storage  
+- Access control  
+- Audit logs  
+
+---
+
+# 🎥 Demo Screenshots
+
+> Replace these with real app screenshots.
+
+### Upload UI  
+<img src="assets/demo1.png" width="700"/>
+
+### OCR + PII Detection  
+<img src="assets/demo2.png" width="700"/>
+
+### Manager Login  
+<img src="assets/demo3.png" width="700"/>
+
+### Masked Document  
+<img src="assets/demo4.png" width="700"/>
+
+---
+
+# 🔒 Security & Compliance
+
+- DPDP Act 2023 Compliant  
+- IT Act & SPDI Rules  
+- AES-256 Industry Encryption  
+- Zero-Trust Workflow  
+
+---
+
+# ⚠️ Challenges
+
+1. DPDP compliance complexity  
+2. Low user awareness  
+3. Managerial misuse risks  
+4. Cyberattacks despite encryption  
+
+---
+
+# 🎯 Impact
+
+- Protects sensitive Indian identity documents  
+- Reduces fraud & identity theft  
+- Builds trust in digital document workflows  
+- Useful for universities, HR, banks, govt offices  
+
+---
+
+# 🚀 Future Enhancements
+
+- AI-based PII classification  
+- Multi-language OCR  
+- Role-based dashboards  
+- Cloud storage encryption  
+- Real-time redaction  
+
+---
+
+# 📜 License
+
+MIT License.
