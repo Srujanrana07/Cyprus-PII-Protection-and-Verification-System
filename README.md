@@ -2,9 +2,9 @@
   <img src="assets/logo-pii-protect-dark.svg" width="220" alt="PII Protect Logo"/>
 </p> -->
 <p align="center">
-  <img src="assets/CYPRUS.png" width="220" alt="PII Protect Logo"/>
+  <img src="assets/CYPRUS.png" width="300" alt="PII Protect Logo"/>
 </p> 
-CYPRUS.png
+
 <h1 align="center">🛡️Cyprus : PII Protect System</h1>
 <p align="center"><i>AI-Powered Sensitive Data Detection, Masking & Secure Document Management</i></p>
 
